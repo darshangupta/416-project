@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Car Information Visualization</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Car Information Visualization</h1>
+    <div class="narrative">
+      <p>Welcome to the narrative visualization of how certain factors affect vehicle performance. In this visualization, we will analyze data from a dataset containing various attributes of cars, including fuel efficiency, horsepower, and more. We'll focus on three key visualizations to uncover meaningful insights about the relationship between these factors.</p>
+      <p>Let's dive into each visualization to gain a deeper understanding of how fuel efficiency, horsepower, and other factors impact car prices and performance.</p>
+    </div>
+    <div class="graph-descriptions">
+      <div class="scene" id="scatterPlot">
+        <h2 class="chart-title">Scatter Plot: Drive Wheel vs. Horsepower</h2>
+        <div class="chart-description">
+          <p>This scatter plot demonstrates the relationship between drive wheel and horsepower of cars. Each point represents a car, and its position on the plot is determined by its drive wheel (x-axis) and horsepower (y-axis).</p>
+          <p>Takeaways: We can observe how drive wheel and horsepower are correlated. Generally, rwd cars have the highest horsepower and fwd have the lowest.</p>
+        </div>
+      </div>
+
+      <div class="scene" id="barChart">
+        <h2 class="chart-title">Bar Chart: Average Price by Engine Location</h2>
+        <div class="chart-description">
+          <p>This bar chart presents the average price of cars (y-axis) categorized by their engine location (on x-axis, either front or rear).</p>
+          <p>Takeaways: By analyzing the bar chart, we can identify that rear engine cars are generally more expensive than front engine cars.</p>
+        </div>
+      </div>
+
+      <div class="scene" id="bubbleChart">
+        <h2 class="chart-title">Bubble Chart: Price vs. Horsepower vs. Curbweight</h2>
+        <div class="chart-description">
+          <p>This bubble chart illustrates the relationship between curbweight (represented by the size of bubbles), Horsepower (x-axis), and Price (y-axis).</p>
+          <p>Takeaways: By examining the bubble chart, we can conclude that higher horsepower cars are generally more expensive. And, although a looser correlation, heavier cars are generally more expensive as well.</p>
+        </div>
+      </div>
+    </div>
+    <button id="next">Next Scene</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
