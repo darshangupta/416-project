@@ -21,7 +21,7 @@ d3.csv("car_prices.csv").then(data => {
     });
   
     
-    let currentScene = 0;
+    let currentScene = -1;
   
     
     const scatterWidth = 500;
