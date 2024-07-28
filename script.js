@@ -119,7 +119,7 @@ d3.csv("car_prices.csv").then(data => {
       
         barGroup.append("text")
             .attr("x", scatterWidth / 2)
-            .attr("y", barHeight + barMargin.bottom - 20) // Adjusted to move the text higher
+            .attr("y", barHeight + barMargin.bottom - 20) 
             .attr("text-anchor", "middle")
             .attr("class", "chart-axis-text")
             .text("Engine Location");
@@ -194,7 +194,7 @@ d3.csv("car_prices.csv").then(data => {
         bubbleGroup.append("text")
             .attr("transform", "rotate(-90)")
             .attr("x", -bubbleHeight / 2)
-            .attr("y", -bubbleMargin.left + 8) // Adjusted to move the text farther left
+            .attr("y", -bubbleMargin.left + 8) 
             .attr("text-anchor", "middle")
             .attr("class", "chart-axis-text")
             .text("Price");
